@@ -1,0 +1,143 @@
+.p {
+    font-size: 2px;
+}
+
+.body {
+    background-color: #207b29;
+}
+
+.what {
+    font-weight: 900;
+    font-size: 30px;
+    color: darkred;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.whatsmall {
+    color: #070404;
+    font-size: 20px;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.navbar-nav .nav-item.dropdown.active .nav-link {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.navbar-nav .dropdown-item.active {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+form,
+.task,
+.shop_show {
+    background-color: #911919cd;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+    font-size: 20px;
+}
+
+table {
+    padding: 29%;
+    border-spacing: 0;
+    empty-cells: hide;
+    width: 100%;
+}
+
+td {
+    padding: 10px 30px;
+    text-align: center;
+    border-bottom: 1px solid #0a0602;
+    border-radius: 0px;
+    transition: all 0.5s linear;
+}
+
+td:first-child {
+    text-align: center;
+    color: #181712;
+    font-weight: bold;
+}
+
+th {
+    padding: 10px 20px;
+    color: #0a0906;
+    border-bottom: 1px solid #120a02;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+td:nth-child(even) {
+    background: #e2d0c2;
+}
+
+td:nth-child(odd) {
+    background: #e2d0c2;
+
+}
+
+th:nth-child(even) {
+    background: pink;
+}
+
+th:nth-child(odd) {
+    background: #e2d0c2;
+}
+
+.round-top {
+    border-top-left-radius: 5px;
+}
+
+.round-bottom {
+    border-bottom-left-radius: 5px;
+}
+
+tr:hover td {
+    background: #207b29;
+    font-weight: bold;
+}
+
+.product-card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card .image {
+    max-width: 100%;
+    height: auto;
+}
+
+.product-card h2 {
+    margin: 0 0 8px;
+}
+
+.product-card p {
+    margin: 0;
+}
+
+.sorthigh {
+    color: #8a2323;
+    font-size: 25px;
+}
+
+.meow {
+    text-align: center;
+    background-image: url(6cq6nh18.png);
+    background-position: center;
+    background-size: cover;
+}

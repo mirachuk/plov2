@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PILAF</title>
+  <link rel="icon" href="1++p.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+<header>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <div class="what">
+        <a class="navbar-brand" href="index.html">I_LOVE_PILAF</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index2.html">Каталог</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Контакты
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="index3.html">Контакты</a></li>
+              <li><a class="dropdown-item" href="index4.html">Отзывы</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<body>
+  <main>
+    <br>
+    <h2 class="text-center">Наши постоянные клиенты (их контакты и сумма заказов)</h2>
+    <br>
+    <div class="table">
+      <table>
+        <tr>
+          <td>Олег</td>
+          <td>89042334234</td>
+          <td>32000 р.</td>
+        </tr>
+        <tr>
+          <td>Наталья</td>
+          <td>89034222122</td>
+          <td>999999р.</td>
+        </tr>
+        <tr>
+          <td>Елена</td>
+          <td>89023435348</td>
+          <td>9000 р.</td>
+        </tr>
+        <tr>
+          <td>Кирилл</td>
+          <td>89023332310</td>
+          <td>10000 р.</td>
+        </tr>
+        <tr>
+          <td>Семён</td>
+          <td>89053442341</td>
+          <td>92333 р.</td>
+        </tr>
+        <tr>
+          <td>Надежда</td>
+          <td>89123343242</td>
+          <td>10000 р.</td>
+        </tr>
+        <tr>
+          <td>Алёна</td>
+          <td>89045544434</td>
+          <td>170000 р.</td>
+        </tr>
+      </table>
+      <div class="wrapper">
+        <br><br>
+        <section>
+          <h1 class="text-center">От создателей</h1>
+          <div class="container">
+            <ul>
+              <li><a href="https://t.me/mirachukn">Telegram</a></li>
+              <li>Email: <a href="mailto:nadashkina@edu.hse.ru?" target="_blank">nadashkina@edu.hse.ru</a>
+              </li>
+              <li><a href="tel:+79049958765" class="phone-link">
+                  8-904-995-87-65
+                  <span class="copy-icon" title="Copy to clipboard">📋</span>
+                </a></li>
+            </ul>
+        </section>
+      </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const phoneLinks = document.querySelectorAll('.phone-link');
+      phoneLinks.forEach(link => {
+        const copyIcon = link.querySelector('.copy-icon');
+        copyIcon.addEventListener('click', function (event) {
+          event.preventDefault();
+          const phoneNumber = link.textContent.trim();
+          navigator.clipboard.writeText(phoneNumber).then(() => {
+            alert('Phone number copied to clipboard!');
+          }).catch(err => {
+            console.error('Failed to copy: ', err);
+          });
+        });
+      });
+    });
+  </script>
+</body>
+<footer class="bg-warning">
+  <div class="container">
+    <p class="text-center">&copy;BY MIRACHUK NADYA</p>
+  </div>
+</footer>
+
+</html>
